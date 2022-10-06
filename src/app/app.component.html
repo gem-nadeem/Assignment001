@@ -1,21 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container">
+  <h2 class="header">Assignment-1</h2>
+  <div class="section-1">
+     <h3 class="sub-header">Section-1</h3>
+     <button class="showDetails" (click)="onclick()">Display Details</button>
+     <strong> Display button click {{count}} times </strong> 
+     <p class="para-section" *ngIf="isClicked">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa quod accusamus dolorum quasi distinctio obcaecati adipisci odit corporis facere 
+      nostrum assumenda! Nisi harum tenetur aspernatur sint rep
+      rehenderit possimus cupiditate?
+      
+    </p>
+  </div>
+  <div class="section-2">
+    <h3 class="sub-header"> Section-2</h3>
+    <div class="mb-3">
+      <label for="text" class="inputLabel">Enter Sometext</label>
+      <input type="text" class="userInput" #txt  placeholder="Enter some text...">
+      <button class="showDetails" (click)="OnSubmit(txt.value)">Add</button>
+        <div class="show" *ngFor="let text of texts; index as index">
+          <p [ngClass]="{'blueBg': (index+1)%5===0}">
+            {{index+1}}-{{text}}
+          </p>
+        </div>
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>

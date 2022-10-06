@@ -1,0 +1,52 @@
+
+.header{
+    background-color: rgb(109, 109, 236);
+    padding: 15px;
+}
+
+.showDetails{
+    cursor: pointer;
+    background-color:cadetblue;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    margin: 5px 10px;
+}
+
+.para-section{
+    border: 1px solid #000000;
+    width: 300px;
+    margin: 10px 50px;
+    padding: 10px;
+}
+
+.section-1{
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+}
+
+.section-2{
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+}
+.sub-header{
+    text-decoration: underline;
+}
+
+
+.blueBg{
+    background-color: blue;
+    color: #ffffff;
+}
+
+.userInput{
+    margin: 5px;
+}
+.addText{
+    cursor: pointer;
+    margin: 20px;
+    width: 100px;
+}
